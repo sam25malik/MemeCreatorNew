@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    tools:context="com.example.memecreator.MainActivity"
+    >
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.memecreator.TopSectionFragment"
+        android:id="@+id/fragment"
+        tools:layout="@layout/top_section_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fragment2" />
+
+    <fragment
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:name="com.example.memecreator.BottomPictureFragment"
+        android:id="@+id/fragment2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/bottom_picture_fragment" />
+
+</RelativeLayout>
