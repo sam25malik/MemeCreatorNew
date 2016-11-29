@@ -220,6 +220,9 @@ int pic;
 
                     FileOutputStream outputStream = new FileOutputStream(imageFile);
                     int quality = 100;
+ Bitmap bitmap = Bitmap.createBitmap(v1.getDrawingCache(),120,840,850,1080);
+                System.out.println("Height"+bitmap.getHeight());
+                    System.out.println("width"+bitmap.getWidth());
 
                     //bitmap=scaleBitmap(bitmap,1000,500);
                   //bitmap=Bitmap.createBitmap(bitmap, -200, -200, 200,300);
